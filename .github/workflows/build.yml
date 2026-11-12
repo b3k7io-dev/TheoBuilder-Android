@@ -31,6 +31,7 @@ jobs:
           api-level: 36
           cmdline-tools-version: latest
           accept-android-sdk-licenses: true
+          packages: platform-tools
 
       - name: Make gradlew executable
         run: chmod +x gradlew
@@ -82,6 +83,7 @@ jobs:
           api-level: 36
           cmdline-tools-version: latest
           accept-android-sdk-licenses: true
+          packages: platform-tools
 
       - name: Make gradlew executable
         run: chmod +x gradlew
