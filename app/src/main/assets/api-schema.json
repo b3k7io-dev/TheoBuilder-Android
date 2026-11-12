@@ -1,0 +1,291 @@
+{
+  "schemaVersion": "0.1.0",
+  "schemaStatus": "partial-reference-backed-not-game-tested",
+  "sourcePolicy": "Only fields evidenced in cited tutorials. Older tutorials do not establish current-version compatibility.",
+  "types": [
+    {
+      "id": "park",
+      "label": "Park",
+      "draftType": "park",
+      "compatibility": "Older official forum example; not tested in current game.",
+      "sources": [
+        "https://forum.theotown.com/viewtopic.php?p=49469",
+        "https://forum.theotown.com/viewtopic.php?p=95033"
+      ],
+      "properties": [
+        {
+          "name": "id",
+          "label": "Internal ID",
+          "description": "Unique draft ID.",
+          "type": "text",
+          "group": "Basic",
+          "required": true,
+          "source": "https://forum.theotown.com/viewtopic.php?p=95033",
+          "default": "$theobuilder_park_00",
+          "draftKey": "id"
+        },
+        {
+          "name": "title",
+          "label": "Object name",
+          "description": "Display title in tutorial examples.",
+          "type": "text",
+          "group": "Basic",
+          "required": false,
+          "source": "https://forum.theotown.com/viewtopic.php?p=95033",
+          "draftKey": "title"
+        },
+        {
+          "name": "author",
+          "label": "Author",
+          "description": "Draft author field.",
+          "type": "text",
+          "group": "Basic",
+          "required": true,
+          "source": "https://forum.theotown.com/viewtopic.php?p=95033",
+          "default": "",
+          "draftKey": "author"
+        },
+        {
+          "name": "width",
+          "label": "Width (tiles)",
+          "description": "Draft footprint width.",
+          "type": "number",
+          "group": "Basic",
+          "required": true,
+          "source": "https://forum.theotown.com/viewtopic.php?p=95033",
+          "default": "1",
+          "draftKey": "width",
+          "minimum": 1
+        },
+        {
+          "name": "height",
+          "label": "Height (tiles)",
+          "description": "Draft footprint height.",
+          "type": "number",
+          "group": "Basic",
+          "required": true,
+          "source": "https://forum.theotown.com/viewtopic.php?p=95033",
+          "default": "1",
+          "draftKey": "height",
+          "minimum": 1
+        },
+        {
+          "name": "texture",
+          "label": "PNG texture",
+          "description": "One PNG referenced by frames[0].bmp.",
+          "type": "texture",
+          "group": "Appearance",
+          "required": true,
+          "source": "https://forum.theotown.com/viewtopic.php?p=95033"
+        },
+        {
+          "name": "price",
+          "label": "Construction price",
+          "description": "One-time build cost; example default 0.",
+          "type": "number",
+          "group": "Economy",
+          "required": false,
+          "source": "https://forum.theotown.com/viewtopic.php?p=49469",
+          "default": "0",
+          "draftKey": "price",
+          "minimum": 0
+        },
+        {
+          "name": "monthly price",
+          "label": "Monthly price",
+          "description": "Ongoing upkeep; example default 0.",
+          "type": "number",
+          "group": "Economy",
+          "required": false,
+          "source": "https://forum.theotown.com/viewtopic.php?p=49469",
+          "default": "0",
+          "draftKey": "monthly price",
+          "minimum": 0
+        },
+        {
+          "name": "influence park",
+          "label": "Park influence",
+          "description": "Per-tile influence in example; no default/range asserted.",
+          "type": "number",
+          "group": "Influence",
+          "required": false,
+          "source": "https://forum.theotown.com/viewtopic.php?p=49469",
+          "draftKey": "influence park"
+        },
+        {
+          "name": "needs road",
+          "label": "Needs road",
+          "description": "Road requirement; example default true.",
+          "type": "boolean",
+          "group": "Requirements",
+          "required": false,
+          "source": "https://forum.theotown.com/viewtopic.php?p=49469",
+          "default": "true",
+          "draftKey": "needs road"
+        }
+      ]
+    },
+    {
+      "id": "decoration",
+      "label": "Decoration",
+      "draftType": "decoration",
+      "compatibility": "Minimal tutorial example; no animation extension asserted.",
+      "sources": [
+        "https://forum.theotown.com/viewtopic.php?p=95033"
+      ],
+      "properties": [
+        {
+          "name": "id",
+          "label": "Internal ID",
+          "description": "Unique draft ID.",
+          "type": "text",
+          "group": "Basic",
+          "required": true,
+          "source": "https://forum.theotown.com/viewtopic.php?p=95033",
+          "default": "$theobuilder_decoration_00",
+          "draftKey": "id"
+        },
+        {
+          "name": "title",
+          "label": "Object name",
+          "description": "Display title in tutorial examples.",
+          "type": "text",
+          "group": "Basic",
+          "required": false,
+          "source": "https://forum.theotown.com/viewtopic.php?p=95033",
+          "draftKey": "title"
+        },
+        {
+          "name": "author",
+          "label": "Author",
+          "description": "Draft author field.",
+          "type": "text",
+          "group": "Basic",
+          "required": true,
+          "source": "https://forum.theotown.com/viewtopic.php?p=95033",
+          "default": "",
+          "draftKey": "author"
+        },
+        {
+          "name": "width",
+          "label": "Width (tiles)",
+          "description": "Draft footprint width.",
+          "type": "number",
+          "group": "Basic",
+          "required": true,
+          "source": "https://forum.theotown.com/viewtopic.php?p=95033",
+          "default": "1",
+          "draftKey": "width",
+          "minimum": 1
+        },
+        {
+          "name": "height",
+          "label": "Height (tiles)",
+          "description": "Draft footprint height.",
+          "type": "number",
+          "group": "Basic",
+          "required": true,
+          "source": "https://forum.theotown.com/viewtopic.php?p=95033",
+          "default": "1",
+          "draftKey": "height",
+          "minimum": 1
+        },
+        {
+          "name": "texture",
+          "label": "PNG texture",
+          "description": "One PNG referenced by frames[0].bmp.",
+          "type": "texture",
+          "group": "Appearance",
+          "required": true,
+          "source": "https://forum.theotown.com/viewtopic.php?p=95033"
+        }
+      ]
+    },
+    {
+      "id": "residential",
+      "label": "Residential building",
+      "draftType": "residential",
+      "compatibility": "Example-based; game compatibility not tested.",
+      "sources": [
+        "https://forum.theotown.com/viewtopic.php?p=95033"
+      ],
+      "properties": [
+        {
+          "name": "id",
+          "label": "Internal ID",
+          "description": "Unique draft ID.",
+          "type": "text",
+          "group": "Basic",
+          "required": true,
+          "source": "https://forum.theotown.com/viewtopic.php?p=95033",
+          "default": "$theobuilder_residential_00",
+          "draftKey": "id"
+        },
+        {
+          "name": "title",
+          "label": "Object name",
+          "description": "Display title in tutorial examples.",
+          "type": "text",
+          "group": "Basic",
+          "required": false,
+          "source": "https://forum.theotown.com/viewtopic.php?p=95033",
+          "draftKey": "title"
+        },
+        {
+          "name": "author",
+          "label": "Author",
+          "description": "Draft author field.",
+          "type": "text",
+          "group": "Basic",
+          "required": true,
+          "source": "https://forum.theotown.com/viewtopic.php?p=95033",
+          "default": "",
+          "draftKey": "author"
+        },
+        {
+          "name": "width",
+          "label": "Width (tiles)",
+          "description": "Draft footprint width.",
+          "type": "number",
+          "group": "Basic",
+          "required": true,
+          "source": "https://forum.theotown.com/viewtopic.php?p=95033",
+          "default": "1",
+          "draftKey": "width",
+          "minimum": 1
+        },
+        {
+          "name": "height",
+          "label": "Height (tiles)",
+          "description": "Draft footprint height.",
+          "type": "number",
+          "group": "Basic",
+          "required": true,
+          "source": "https://forum.theotown.com/viewtopic.php?p=95033",
+          "default": "1",
+          "draftKey": "height",
+          "minimum": 1
+        },
+        {
+          "name": "texture",
+          "label": "PNG texture",
+          "description": "One PNG referenced by frames[0].bmp.",
+          "type": "texture",
+          "group": "Appearance",
+          "required": true,
+          "source": "https://forum.theotown.com/viewtopic.php?p=95033"
+        },
+        {
+          "name": "level",
+          "label": "Level",
+          "description": "Present as example value; no range/default asserted.",
+          "type": "number",
+          "group": "Building",
+          "required": false,
+          "source": "https://forum.theotown.com/viewtopic.php?p=95033",
+          "draftKey": "level"
+        }
+      ]
+    }
+  ]
+}
