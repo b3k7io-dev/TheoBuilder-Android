@@ -2,7 +2,7 @@ package com.theobuilder.app
 
 import android.content.Context
 import android.net.Uri
-import androidx.core.content.Charsets
+import kotlin.text.Charsets
 import org.json.JSONArray
 import org.json.JSONObject
 import java.io.File

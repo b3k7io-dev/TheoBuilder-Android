@@ -341,7 +341,7 @@ private fun Editor(
     Column(mod.fillMaxSize()) {
         TabRow(page) {
             listOf("Свойства", "Текстура", "Экспорт").forEachIndexed { i, t ->
-                Tab(page == i, { page = i }, { Text(t) })
+                Tab(page == i, { page = i }, Modifier, { Text(t) })
             }
         }
         when (page) {
